@@ -1,0 +1,22 @@
+.card {
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.table thead {
+    background: #667eea;
+    color: #fff;
+}
+
+.form-control {
+    height: 42px;
+}
+
+.btn-primary {
+    background: #667eea;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #5a67d8;
+}

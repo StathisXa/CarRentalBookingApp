@@ -1,0 +1,122 @@
+.parent {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    background: linear-gradient(135deg, #ffffff, #f0f4ff);
+    /* gradient background */
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    animation: fadeSlideIn 0.8s ease forwards;
+}
+
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-header {
+    background: transparent;
+    border-bottom: none;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* Animated top icon */
+.login-icon {
+    font-size: 52px;
+    color: #667eea;
+    margin-bottom: 10px;
+    animation: floatIcon 3s ease-in-out infinite,
+        pulseIcon 2s ease-in-out infinite;
+}
+
+@keyframes floatIcon {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulseIcon {
+    0% {
+        text-shadow: 0 0 0 rgba(102, 126, 234, 0.6);
+    }
+
+    50% {
+        text-shadow: 0 0 18px rgba(102, 126, 234, 0.8);
+    }
+
+    100% {
+        text-shadow: 0 0 0 rgba(102, 126, 234, 0.6);
+    }
+}
+
+.form-control {
+    padding-left: 40px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+}
+
+.form-group {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.btn-login {
+    background: #667eea;
+    border: none;
+    height: 45px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    background: #5a67d8;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+    transform: translateY(-2px);
+}
+
+.forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #5a67d8;
+    text-decoration: underline;
+}
